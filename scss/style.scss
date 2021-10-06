@@ -1,0 +1,109 @@
+$primary:#3292a6;
+$pri-overlay:rgba(50,146,156,0.7);
+
+body{
+    margin-top: 90px;
+}
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    background: #fff;
+    opacity: 0.9;
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+      
+        .nav-link{
+            color: #252525;
+        }
+        .nav-link:hover{
+            color:$primary;
+        }
+    }
+    
+    .nav-item:last-child{
+        padding-right: 0;
+    }
+}
+
+#showcase{
+    background-image: url(../img/itali.jpg);
+    min-height: 600px;
+    position: relative;
+    background-size: cover;
+
+    .pirmary-overlay{
+        background: $pri-overlay;
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-lg{
+        border-radius: 0px;
+    }
+}
+
+#subscribe {
+    
+    background-color: #252525;
+    
+    .form-control-lg,.btn-lg{
+        border-radius: 0px;
+    }
+}
+
+#boxes{
+    .card{
+        border-radius: 0px;
+    }
+}
+
+#authores{
+    img{
+        margin-top: -50px;
+    }
+    
+    .fab{
+        font-size: 25px;
+        color: $primary;
+    }
+    
+    .card{
+        border-radius: 0px;
+    }
+    
+
+    .card:hover{
+        background-color: $primary;
+        color: #fff;
+        .fab{
+            color: #fff;
+        }
+    }
+}
+
+#contact{
+    h2{
+        color: $primary;
+    }
+    .input-group-text,.form-control,.btn-lg{
+        border-radius: 0px;
+    }
+}
+
+#footer{
+    background-color: $primary;
+    color: #fff;
+
+
+}
+@media(max-width:576px){
+    #showcase{
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
+
